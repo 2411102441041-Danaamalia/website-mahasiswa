@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Input Data Mahasiswa</h1>
+
+  <div class="container">
+    <form id="mahasiswaForm">
+      <div>
+        <label>Nama Lengkap:</label>
+        <input type="text" id="nama" required>
+      </div>
+
+      <div>
+        <label>NIM:</label>
+        <input type="text" id="nim" required>
+      </div>
+
+      <div>
+        <label>Semester:</label>
+        <input type="number" id="semester" min="1" max="14" required>
+      </div>
+
+      <div>
+        <label>Program Studi:</label>
+        <select id="prodi" required>
+          <option value="">-- Pilih Program Studi --</option>
+          <option>Teknik Informatika</option>
+          <option>Teknik Mesin</option>
+          <option>Kedokteran</option>
+          <option>Teknik Geologi</option>
+          <option>Teknik Pertambangan</option>
+          <option>psikolog</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Email:</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <button type="submit">Kirim Data</button>
+    </form>
+
+    <div class="info" id="infoText"></div>
+
+    <h2>Tabel Data Mahasiswa</h2>
+    <table id="tabelMahasiswa">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama Lengkap</th>
+          <th>NIM</th>
+          <th>Semester</th>
+          <th>Program Studi</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
